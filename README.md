@@ -1,2 +1,2 @@
-# diivangels_website
+# divangels_website
 DivAngels Website Theme
