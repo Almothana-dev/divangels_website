@@ -15,7 +15,7 @@
     Product Featured Media
     ------------------------------------------------------------------------------{% endcomment %}
   <div class="product-template__media page-width page-width--no-gutter">
-    {% assign variant_media_ids = '3' %}
+    {% assign variant_media_ids = '' %}
 
     {%- unless product.has_only_default_variant -%}
 
@@ -176,7 +176,7 @@
     {% if total_media == 1 %}
       <div class="page-width">
       {% endif %}
-
+{% comment %}
       <div class="product__submedia-list product__submedia-list--r{{ total_modulus }}{% if total_media == 1 %} product__submedia-list--single{% endif %}">
 
         {% for media in product.media %}
