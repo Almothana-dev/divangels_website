@@ -171,7 +171,7 @@
       Insert images into rows of 3 and/or 2 depending on the total number of
       images.
     {% endcomment %}
-    {% assign total_modulus = total_media | modulo: 3 %}
+
 
     {% if total_media == 1 %}
       <div class="page-width">
@@ -216,14 +216,14 @@
             {%- endcapture -%}
 
             {% include 'media' with media,
-                section_type: 'slideshow',
-                parent_fit: 'contain',
-                featured_media: true,
-                data_image: 'data-product-slideshow-image',
-                product_media_wrapper_class: product_media_wrapper_class,
-                product_media_wrapper_data: 'data-product-slideshow-slide',
-                image_class: 'fade-in'
-              %}
+                 section_type: 'slideshow',
+                 parent_fit: 'contain',
+                 featured_media: true,
+                 data_image: 'data-product-slideshow-image',
+                 product_media_wrapper_class: product_media_wrapper_class,
+                 product_media_wrapper_data: 'data-product-slideshow-slide',
+                 image_class: 'fade-in'
+               %}
           {% endfor %}
         </div>
 
